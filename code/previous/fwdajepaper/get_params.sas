@@ -1,0 +1,21 @@
+%MACRO Get_data(myDataset=,myLine=,myColumn=,myMVar=);
+%GLOBAL &myMVar.;
+data _null_;
+set &myDataset.;
+if _N_ = &myLine. then do;
+call symput(symget('myMVar'),&myColumn.);
+end;
+run;
+%MEND Get_data;
+
+%Get_data(myDataset=mydata,myLine=1,myColumn=M,myMVar=M);
+%Get_data(myDataset=mydata,myLine=1,myColumn=n,myMVar=n);
+%Get_data(myDataset=mydata,myLine=1,myColumn=k,myMVar=k);
+%Get_data(myDataset=mydata,myLine=1,myColumn=p0,myMVar=p0);
+%Get_data(myDataset=mydata,myLine=1,myColumn=rrtrt,myMVar=rrtrt);
+%Get_data(myDataset=mydata,myLine=1,myColumn=varre,myMVar=varre);
+%Get_data(myDataset=mydata,myLine=1,myColumn=rrcov,myMVar=rrcov);
+%Get_data(myDataset=mydata,myLine=1,myColumn=varcov,myMVar=varcov);
+%Get_data(myDataset=mydata,myLine=1,myColumn=rhocov,myMVar=rhocov);
+%Get_data(myDataset=mydata,myLine=1,myColumn=meanunexp,myMVar=meanunexp);
+%Get_data(myDataset=mydata,myLine=1,myColumn=meanexp,myMVar=meanexp);

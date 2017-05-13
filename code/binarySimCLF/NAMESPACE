@@ -1,0 +1,3 @@
+export("allReg", "ar1", "blrchk", "blrchk1", "chkBinC", "cor2var",
+"getBnds", "ma1", "mardia", "mbsclf", "mbsclf1", "psi2var", "ranBin2",
+"ranXch", "rhoRange", "solve2", "var2cor", "xch", "var2psi", "cor2psi")

@@ -1,0 +1,12 @@
+*.Rproj
+.DS_Store
+.Rhistory
+.Rproj.user/
+Archive.zip
+data/
+figures/
+library/
+notes/
+paper/
+presentation/
+debug/

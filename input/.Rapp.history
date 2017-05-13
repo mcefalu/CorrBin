@@ -1,0 +1,8 @@
+load("/Users/matt/Documents/Harvard/Research/Correlated Binary/input/input.RData")
+ls()
+b
+bb
+i
+input
+ls(input)
+exp(c(0.69314718 , 0.40546511 , 0.04879016 ,-0.05129329 , 0.04879016))
